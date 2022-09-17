@@ -1,0 +1,83 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가위 바위 보</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="rsp">
+      <div id="rspMoney">
+        <!-- 코인 표시 -->
+        <div class="flex justify-content-space-between">
+          <img src="bitcoin.jpg" alt="코인" class="coinImage" />
+          <div id="rspCoin">1000</div>
+        </div>
+      </div>
+      <div id="rspBattle" class="grid">
+        <!-- 가위바위보 승부 -->
+        <div class="flex justify-content-space-around">
+          <div id="box1" class="rspBattleBox">이겼다</div>
+          <div id="box2" class="rspBattleBox">이겼다</div>
+        </div>
+        <div id="boxMid" class="flex">
+          <div id="boxMidLeft1"></div>
+          <div id="rspOdds">
+            <span id="rspOdds1" class="rspRoulette odd">1</span>
+            <span id="rspOdds2" class="rspRoulette even">2</span>
+            <span id="rspOdds3" class="rspRoulette odd">7</span>
+            <span id="rspOdds4" class="rspRoulette even">4</span>
+            <span id="rspOdds5" class="rspRoulette odd">2</span>
+            <span id="rspOdds6" class="rspRoulette even">3</span>
+            <span id="rspOdds7" class="rspRoulette odd">1</span>
+            <span id="rspOdds8" class="rspRoulette even">20</span>
+            <span id="rspOdds9" class="rspRoulette odd">2</span>
+            <span id="rspOdds10" class="rspRoulette even">6</span>
+            <span id="rspOdds11" class="rspRoulette odd">1</span>
+            <span id="rspOdds12" class="rspRoulette even">3</span>
+            <span id="rspOdds13" class="rspRoulette odd">2</span>
+            <span id="rspOdds14" class="rspRoulette even">1</span>
+            <span id="rspOdds15" class="rspRoulette odd">3</span>
+            <span id="rspOdds16" class="rspRoulette even">4</span>
+            <div id="rspBlack">
+              <img src="rspScissor.jpg" alt="rsp" id="rspMainImage" />
+            </div>
+          </div>
+          <div id="boxMidRight1"></div>
+        </div>
+        <div class="flex justify-content-space-around">
+          <div
+            id="box3"
+            class="rspBattleBox flex flex-direction-column justify-content-end"
+          >
+            졌다
+          </div>
+          <div
+            id="box4"
+            class="rspBattleBox flex flex-direction-column justify-content-end"
+          >
+            비겼다
+          </div>
+        </div>
+      </div>
+      <div id="rspSelect">
+        <!-- 내 가위바위보 선택 -->
+        <div
+          id="rspSelectInnerBackground"
+          class="flex justify-content-space-between"
+        >
+          <div id="rspList" class="flex">
+            <div id="rspScissor">가위</div>
+            <div id="rspRock">바위</div>
+            <div id="rspPaper">보</div>
+          </div>
+          <div id="lever">
+            <img src="lever.png" alt="레버" width="100px" height="100px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
